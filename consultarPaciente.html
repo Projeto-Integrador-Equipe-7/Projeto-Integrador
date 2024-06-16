@@ -13,9 +13,12 @@
     <div class="sidebar">
         <label class="sobrevidas-logo">Sobrevidas</label>
         <button class="sidebar-button" type="button"><img src="images/home-icon.png" alt="Ícone">Página Inicial</button>
-        <button class="sidebar-button" type="button"><img src="images/addPacient-icon.png" alt="Ícone">Cadastrar Paciente</button>
-        <button class="sidebar-button" type="button"><img src="images/pacientList-icon.png" alt="Ícone">Consultar Paciente</button>
-        <button class="sidebar-button" type="button"><img src="images/updatePacient-icon.png" alt="Ícone">Atualizar dados</button>
+        <button class="sidebar-button" type="button"><img src="images/addPacient-icon.png" alt="Ícone">Cadastrar
+            Paciente</button>
+        <button class="sidebar-button" type="button"><img src="images/pacientList-icon.png" alt="Ícone">Consultar
+            Paciente</button>
+        <button class="sidebar-button" type="button"><img src="images/updatePacient-icon.png" alt="Ícone">Atualizar
+            dados</button>
         <button class="sidebar-button" type="button"><img src="images/history-icon.png" alt="Ícone">Histórico</button>
         <button class="sidebar-button" type="button"><img src="images/user-icon.png" alt="Ícone">Meu perfil</button>
         <button class="logout-button" type="button"><img src="images/logout-icon.png" alt="Ícone">Log out</button>
@@ -24,24 +27,46 @@
         <div class="top-text">Pacientes Cadastrados</div>
     </div>
     <div class="content">
-    <div class="main-content">
-        <div class="table-div">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome:</th>
-                        <th>CPF:</th>
-                        <th>Data de nascimento:</th>
-                        <th>Microarea:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+        <div class="main-content">
+            <div class="table-div">
+                <main class="table" id="customers_table">
+                    <section class="table__header">
+                        <div class="input-group">
+                            <input type="search" placeholder="Buscar por CPF ou Nome...">
+                            <img src="images/search.png" alt="">
+                        </div>
+                    </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Nome <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> CPF </th>
+                                <th> Data de Nascimento <span class="icon-arrow">&UpArrow;</span></th>
+                                <th> Microárea <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td> Jucelino Cobrecheck </td>
+                                <td> 098.765.432.10</td>
+                                <td> 21/06/1960 </td>
+                                <td> Área 26</td>
+                            </tr>
+                            <tr>
+                                <td> Sujiro Kifujas </td>
+                                <td> 123.456.789.01 </td>
+                                <td> 31/02/1968 </td>
+                                <td> Área 12 </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </section>
+            </div>
         </div>
     </div>
-    </div>
     <script src="./js/botoes.js"></script>
+    <script src="./js/teste.js"></script>
 </body>
 
 </html>
