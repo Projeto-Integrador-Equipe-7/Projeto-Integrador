@@ -11,11 +11,7 @@ func Search(query string) (pacientes []Paciente, err error) {
 	}
 	defer conn.Close()
 
-	rows, err := conn.Query(`
-		SELECT * FROM pacientes 
-		WHERE nome_completo ILIKE '%' || $1 || '%' 
-		OR cpf ILIKE '%' || $1 || '%'
-	`, query)
+	rows, err := conn.Query(`SELECT * FROM pacientes WHERE nome_completo ILIKE $1 OR cpf ILIKE $1`, query+"%")
 	if err != nil {
 		return
 	}
