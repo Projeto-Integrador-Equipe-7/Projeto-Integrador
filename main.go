@@ -32,6 +32,7 @@ func main() {
 	r.Delete("/{id}", handlers.Delete) //funcionando
 	r.Get("/{id}", handlers.Get)       //funcionando
 	r.Get("/", handlers.List)          //funcionando
+	r.Get("/search", handlers.Search)  // Adicionada rota de busca
 
 	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), r)
 }
