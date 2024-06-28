@@ -8,13 +8,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var ListBtn = document.getElementById('pacientList-button');
+    
+    if (ListBtn) {
+        ListBtn.addEventListener('click', function() {
+            window.location.href = 'consultarPaciente.html';
+        });
+    }
+});
 
-/* ALTERA A PÁGINA HOME PARA A PÁGINA DE NOTIFICAÇÃO
+/* ALTERA A PÁGINA HOME PARA A PÁGINA DE NOTIFICAÇÃO*/
 document.addEventListener('DOMContentLoaded', function() {
     var notificationIcon = document.getElementById('notification-icon');
         notificationIcon.addEventListener('click', function() {
             // Redireciona para a página desejada ou executa outra ação
-            window.location.href = 'index.html';      COLOCAR O NOME DA PÁGINA AQUI QUANDO ELA ESTIVER PRONTA
+            window.location.href = 'notificacoes.html';      //COLOCAR O NOME DA PÁGINA AQUI QUANDO ELA ESTIVER PRONTA
         });
 });
-*/
+document.addEventListener('DOMContentLoaded', function() {
+    var AttBtn = document.getElementById('updatePacient-button');
+    
+    if (AttBtn) {
+        AttBtn.addEventListener('click', function() {
+            window.location.href = 'atualizarDados.html';
+        });
+    }
+});
