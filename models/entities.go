@@ -16,9 +16,9 @@ type Paciente struct {
 	Genero            string    `json:"genero"`
 	DataCadastro      time.Time `json:"data_cadastro"`
 	OrientacaoSexual  string    `json:"orientacao_sexual"`
-	PossuiDeficiencia bool      `json:"possui_deficiencia"`
-	ConsumoTabaco     bool      `json:"consumo_tabaco"`
-	ConsumoAlcool     bool      `json:"consumo_alcool"`
+	PossuiDeficiencia string      `json:"possui_deficiencia"`
+	ConsumoTabaco     string      `json:"consumo_tabaco"`
+	ConsumoAlcool     string      `json:"consumo_alcool"`
 	ConsomeTabaco     bool      `json:"consome_tabaco"`
 	FeridasBoca       bool      `json:"feridas_boca"`
 	ConsomeAlcool     bool      `json:"consome_alcool"`
