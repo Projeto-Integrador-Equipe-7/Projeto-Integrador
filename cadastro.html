@@ -39,24 +39,24 @@
                     <div class="input_container">
                         <div class="input-01">
                             <label for="name">Nome Completo</label>
-                            <input type="text" name="nome" placeholder="">
+                            <input type="text" name="nome" placeholder="" required>
 
                             <label for="endereco">Endereço</label>
-                            <input type="text" name="endereco" placeholder="">
+                            <input type="text" name="endereco" placeholder="" required>
 
                             <label for="bairro">Bairro</label>
-                            <input type="text" name="bairro" placeholder="">
+                            <input type="text" name="bairro" placeholder="" required>
                         </div>
                         <div>
                             <label for="cpf">CPF</label>
-                            <input type="text" name="cpf" id="cpf-input" >
+                            <input type="text" name="cpf" id="cpf-input" required >
 
                             <label for="nascimento">Data de nascimento</label>
                             <input type="text" id="dataForm" name="nascimento" placeholder="DD/MM/AAAA"
                                 oninput="formatDate(this)" required>
 
                             <label for="sexo">Sexo</label>
-                            <select name="sexo">
+                            <select name="sexo" required>
                                 <option value="" disabled selected hidden></option>
                                 <option value="opcao1">Opção 1</option>
                                 <option value="opcao2">Opção 2</option>
@@ -71,22 +71,22 @@
                     <div class="input_container">
                         <div class="input-01">
                             <label for="nomeMae">Nome da mãe</label>
-                            <input type="text" name="nomeMae" placeholder="">
+                            <input type="text" name="nomeMae" placeholder="" required>
 
                             <label for="email">Email</label>
-                            <input type="text" name="email" placeholder="">
+                            <input type="text" name="email" placeholder="" required>
 
                             <label for="telefone">Telefone</label>
-                            <input type="text" name="telefone" placeholder="">
+                            <input type="text" name="telefone" placeholder="" required>
 
                             <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
-                            <input type="text" name="deficiencia" placeholder="">
+                            <input type="text" name="deficiencia" placeholder="" required>
                         </div>
                         <div>
 
 
                             <label for="microarea">Microárea</label>
-                            <select name="microarea">
+                            <select name="microarea" required>
                                 <option value="" disabled selected hidden></option>
                                 <option value="opcao1">Opção 1</option>
                                 <option value="opcao2">Opção 2</option>
@@ -94,7 +94,7 @@
                             </select>
 
                             <label for="genero">Identidade de gênero</label>
-                            <select name="genero">
+                            <select name="genero" required>
                                 <option value="" disabled selected hidden></option>
                                 <option value="opcao1">Opção 1</option>
                                 <option value="opcao2">Opção 2</option>
@@ -102,7 +102,7 @@
                             </select>
 
                             <label for="orientacao">Orientação Sexual</label>
-                            <select name="orientacao">
+                            <select name="orientacao" required>
                                 <option value="" disabled selected hidden></option>
                                 <option value="opcao1">Opção 1</option>
                                 <option value="opcao2">Opção 2</option>
@@ -118,26 +118,26 @@
                             <div class="radios">
                                 <div class="input-div">
                                     <p>Faz uso de tabaco?</p>
-                                    <input type="radio" name="tabaco" value="true">
+                                    <input type="radio" name="tabaco" value="true" required>
                                     <label for="tabaco">Sim</label>
                                     <p></p>
-                                    <input type="radio" name="tabaco" value="false">
+                                    <input type="radio" name="tabaco" value="false" required>
                                     <label for="tabaco">Não</label>
                                 </div>
                                 <div class="input-div">
                                     <p>Consome álcool?</p>
-                                    <input type="radio" name="alcool" value="true">
+                                    <input type="radio" name="alcool" value="true" required>
                                     <label for="alcool">Sim</label>
                                     <p></p>
-                                    <input type="radio" name="alcool" value="false">
+                                    <input type="radio" name="alcool" value="false" required>
                                     <label for="alcool">Não</label>
                                 </div>
                                 <div class="input-div">
                                     <p>Possui feridas na boca?</p>
-                                    <input type="radio" name="feridas" value="true">
+                                    <input type="radio" name="feridas" value="true" required>
                                     <label for="feridas">Sim</label>
                                     <p></p>
-                                    <input type="radio" name="feridas" value="false">
+                                    <input type="radio" name="feridas" value="false" required>
                                     <label for="feridas">Não</label>
                                 </div>
                             </div>
@@ -160,17 +160,21 @@
                                     <label for="ConsumoAlcool">menos de 25 latas de cerveja por semana ou mais
                                         (aproximadamente 3 a 4 latas por dia)</label>
                                     <p></p>
-                                    <input type="radio" name="ConsumoAlcool" value="true">
-                                    <label for="ConsumoAlcool">6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <input type="radio" name="ConsumoVinho" value="true">
+                                    <label for="ConsumoVinho">6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
                                     <p></p>
-                                    <input type="radio" name="ConsumoAlcool" value="false">
-                                    <label for="ConsumoAlcool">menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <input type="radio" name="ConsumoVinho" value="false">
+                                    <label for="ConsumoVinho">menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <hr style="width: 90%; margin: 2px auto;">
+                <div class="submit">
+
+<button type="submit" class="submitButton"><span>Concluir cadastro</span></button>
+                </div>
             </form>
         </div>
         <script src="./js/botoes.js"></script>
