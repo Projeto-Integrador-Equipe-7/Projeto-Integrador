@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh; /* Altura fixa para o contêiner do formulário */
     overflow: auto; /* Adiciona barras de rolagem quando necessário */
+    overflow-x: hidden;
 }
 .form{
     width: 100%;
@@ -26,12 +27,12 @@
 }
 .form-02{
     width: 100%;
-    height: 44vh;
+    height: 50vh;
 
 }
 .form-03{
     width: 100%;
-    height: 44vh;
+    height: 53vh;
 
 }
 

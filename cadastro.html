@@ -48,8 +48,8 @@
                             <input type="text" name="bairro" placeholder="">
                         </div>
                         <div>
-                            <label for="cpf">Cpf</label>
-                            <input type="text" name="cpf" placeholder="">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf-input" >
 
                             <label for="nascimento">Data de nascimento</label>
                             <input type="text" id="dataForm" name="nascimento" placeholder="DD/MM/AAAA"
@@ -78,6 +78,9 @@
 
                             <label for="telefone">Telefone</label>
                             <input type="text" name="telefone" placeholder="">
+
+                            <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
+                            <input type="text" name="deficiencia" placeholder="">
                         </div>
                         <div>
 
@@ -139,10 +142,10 @@
                                 </div>
                             </div>
                             <div class="radios">
-                                <div class="input-div">
+                                <div class="input-div" style="margin-left: 10%;">
                                     <p>Se faz uso de tabaco, qual é o consumo diário?</p>
                                     <input type="radio" name="ConsumoTabaco" value="true">
-                                    <label for="ConsumoTabaco">20  cigarros ou mais por dia</label>
+                                    <label for="ConsumoTabaco">20 cigarros ou mais por dia</label>
                                     <p></p>
                                     <input type="radio" name="ConsumoTabaco" value="false">
                                     <label for="ConsumoTabaco">Menos de 20 cigarros por dia</label>
@@ -150,10 +153,18 @@
                                 <div class="input-div">
                                     <p>Se faz consumo de álcool, qual é o consumo?</p>
                                     <input type="radio" name="ConsumoAlcool" value="true">
-                                    <label for="ConsumoAlcool">25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)</label>
+                                    <label for="ConsumoAlcool">25 latas de cerveja por semana ou mais (aproximadamente 3
+                                        a 4 latas por dia)</label>
                                     <p></p>
                                     <input type="radio" name="ConsumoAlcool" value="false">
-                                    <label for="ConsumoAlcool">menos de 25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)</label>
+                                    <label for="ConsumoAlcool">menos de 25 latas de cerveja por semana ou mais
+                                        (aproximadamente 3 a 4 latas por dia)</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoAlcool" value="true">
+                                    <label for="ConsumoAlcool">6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoAlcool" value="false">
+                                    <label for="ConsumoAlcool">menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
                                 </div>
                             </div>
                         </div>
@@ -164,6 +175,7 @@
         </div>
         <script src="./js/botoes.js"></script>
         <script src="./js/scripts.js"></script>
+    </div>
 </body>
 
 </html>
