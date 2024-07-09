@@ -32,3 +32,19 @@ cpfInput.addEventListener('input', applyCPFFormat);
 
 
 
+function formatDate(input) {
+    let value = input.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+    let formattedValue = '';
+
+    if (value.length > 0) {
+        formattedValue += value.substring(0, 2); // Dia
+    }
+    if (value.length > 2) {
+        formattedValue += '/' + value.substring(2, 4); // Mês
+    }
+    if (value.length > 4) {
+        formattedValue += '/' + value.substring(4, 8); // Ano
+    }
+
+    input.value = formattedValue;
+}

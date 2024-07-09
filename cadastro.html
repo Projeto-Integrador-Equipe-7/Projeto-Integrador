@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Login" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <label class="sobrevidas-logo">Sobrevidas</label>
+        <button class="sidebar-button" type="button"><img src="images/home-icon.png" alt="Ícone">Página Inicial</button>
+        <button class="sidebar-button" type="button"><img src="images/addPacient-icon.png" alt="Ícone">Cadastrar
+            Paciente</button>
+        <button class="sidebar-button" type="button"><img src="images/pacientList-icon.png" alt="Ícone">Consultar
+            Paciente</button>
+        <button class="sidebar-button" type="button"><img src="images/updatePacient-icon.png" alt="Ícone">Atualizar
+            dados</button>
+        <button class="sidebar-button" type="button"><img src="images/history-icon.png" alt="Ícone">Histórico</button>
+        <button class="sidebar-button" type="button"><img src="images/user-icon.png" alt="Ícone">Meu perfil</button>
+        <button class="logout-button" type="button"><img src="images/logout-icon.png" alt="Ícone">Log out</button>
+    </div>
+    <div class="top">
+        <img src="./images/userCircle-icon.png" class="left-image" alt="Ícone">
+        <div class="welcome-text">Cadastro de Paciente</div>
+        <img src="./images/notification-icon.png" class="right-image" alt="Ícone" id="notification-icon">
+    </div>
+    <div class="content">
+        <div class="form-content">
+            <form class="form">
+                <div class="text">
+                    <p>Preencha os campos abaixo com os dados do paciente</p>
+                </div>
+                <hr style="width: 90%; margin: 2px auto;">
+                <div class="form-01">
+                    <div class="input_container">
+                        <div class="input-01">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" name="nome" placeholder="" required>
+
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco" placeholder="" required>
+
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" placeholder="" required>
+                        </div>
+                        <div>
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf-input" required >
+
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="text" id="dataForm" name="nascimento" placeholder="DD/MM/AAAA"
+                                oninput="formatDate(this)" required>
+
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="opcao1">Opção 1</option>
+                                <option value="opcao2">Opção 2</option>
+                                <option value="opcao3">Opção 3</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <hr style="width: 90%; margin: 2px auto;">
+                <div class="form-02">
+                    <div class="input_container">
+                        <div class="input-01">
+                            <label for="nomeMae">Nome da mãe</label>
+                            <input type="text" name="nomeMae" placeholder="" required>
+
+                            <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="" required>
+
+                            <label for="telefone">Telefone</label>
+                            <input type="text" name="telefone" placeholder="" required>
+
+                            <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
+                            <input type="text" name="deficiencia" placeholder="" required>
+                        </div>
+                        <div>
+
+
+                            <label for="microarea">Microárea</label>
+                            <select name="microarea" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="opcao1">Opção 1</option>
+                                <option value="opcao2">Opção 2</option>
+                                <option value="opcao3">Opção 3</option>
+                            </select>
+
+                            <label for="genero">Identidade de gênero</label>
+                            <select name="genero" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="opcao1">Opção 1</option>
+                                <option value="opcao2">Opção 2</option>
+                                <option value="opcao3">Opção 3</option>
+                            </select>
+
+                            <label for="orientacao">Orientação Sexual</label>
+                            <select name="orientacao" required>
+                                <option value="" disabled selected hidden></option>
+                                <option value="opcao1">Opção 1</option>
+                                <option value="opcao2">Opção 2</option>
+                                <option value="opcao3">Opção 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 90%; margin: 2px auto;">
+                <div class="form-03">
+                    <div class="input_container-02">
+                        <div class="input-01">
+                            <div class="radios">
+                                <div class="input-div">
+                                    <p>Faz uso de tabaco?</p>
+                                    <input type="radio" name="tabaco" value="true" required>
+                                    <label for="tabaco">Sim</label>
+                                    <p></p>
+                                    <input type="radio" name="tabaco" value="false" required>
+                                    <label for="tabaco">Não</label>
+                                </div>
+                                <div class="input-div">
+                                    <p>Consome álcool?</p>
+                                    <input type="radio" name="alcool" value="true" required>
+                                    <label for="alcool">Sim</label>
+                                    <p></p>
+                                    <input type="radio" name="alcool" value="false" required>
+                                    <label for="alcool">Não</label>
+                                </div>
+                                <div class="input-div">
+                                    <p>Possui feridas na boca?</p>
+                                    <input type="radio" name="feridas" value="true" required>
+                                    <label for="feridas">Sim</label>
+                                    <p></p>
+                                    <input type="radio" name="feridas" value="false" required>
+                                    <label for="feridas">Não</label>
+                                </div>
+                            </div>
+                            <div class="radios">
+                                <div class="input-div" style="margin-left: 10%;">
+                                    <p>Se faz uso de tabaco, qual é o consumo diário?</p>
+                                    <input type="radio" name="ConsumoTabaco" value="true">
+                                    <label for="ConsumoTabaco">20 cigarros ou mais por dia</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoTabaco" value="false">
+                                    <label for="ConsumoTabaco">Menos de 20 cigarros por dia</label>
+                                </div>
+                                <div class="input-div">
+                                    <p>Se faz consumo de álcool, qual é o consumo?</p>
+                                    <input type="radio" name="ConsumoAlcool" value="true">
+                                    <label for="ConsumoAlcool">25 latas de cerveja por semana ou mais (aproximadamente 3
+                                        a 4 latas por dia)</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoAlcool" value="false">
+                                    <label for="ConsumoAlcool">menos de 25 latas de cerveja por semana ou mais
+                                        (aproximadamente 3 a 4 latas por dia)</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoVinho" value="true">
+                                    <label for="ConsumoVinho">6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <p></p>
+                                    <input type="radio" name="ConsumoVinho" value="false">
+                                    <label for="ConsumoVinho">menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 90%; margin: 2px auto;">
+                <div class="submit">
+
+<button type="submit" class="submitButton"><span>Concluir cadastro</span></button>
+                </div>
+            </form>
+        </div>
+        <script src="./js/botoes.js"></script>
+        <script src="./js/scripts.js"></script>
+    </div>
+</body>
+
+</html>
