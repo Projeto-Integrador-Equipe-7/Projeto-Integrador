@@ -35,3 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var cadastroBtn = document.getElementById('addPacient-button');
+    cadastroBtn.addEventListener('click', function() {
+            // Redireciona para a página desejada ou executa outra ação
+            window.location.href = 'cadastro.html';      //COLOCAR O NOME DA PÁGINA AQUI QUANDO ELA ESTIVER PRONTA
+        });
+});
