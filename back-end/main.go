@@ -34,5 +34,13 @@ func main() {
 	r.Get("/", handlers.List)          //funcionando
 	r.Get("/search", handlers.Search)  // Adicionada rota de busca
 
+	fs := http.FileServer(http.Dir("../front-end"))
+	r.Handle("/*", fs)
+	// Rota para o frontend na porta 8000
+	go func() {
+		fmt.Println("Servindo frontend na porta 8000...")
+		http.ListenAndServe(":8000", fs)
+	}()
+
 	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), r)
 }
