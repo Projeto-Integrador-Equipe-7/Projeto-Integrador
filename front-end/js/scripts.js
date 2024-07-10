@@ -48,3 +48,70 @@ function formatDate(input) {
 
     input.value = formattedValue;
 }
+
+// Função para enviar os dados para a API
+function enviarDados(event) {
+    event.preventDefault();
+
+
+    let formData = {
+        Nome_Completo: document.querySelector('input[name="nome"]').value,
+        Endereco: document.querySelector('input[name="endereco"]').value,
+        Bairro: document.querySelector('input[name="bairro"]').value,
+        Cpf: document.querySelector('input[name="cpf"]').value,
+        Data_De_Nascimento: formatarData(document.querySelector('input[name="nascimento"]').value), // Converte a data para o formato esperado
+        Sexo: document.querySelector('select[name="sexo"]').value,
+        Nome_Da_Mae: document.querySelector('input[name="nomeMae"]').value,
+        Microarea: parseInt(document.querySelector('select[name="microarea"]').value),
+
+        Email: document.querySelector('input[name="email"]').value,
+        Genero: document.querySelector('select[name="genero"]').value,
+        Data_Cadastro: new Date().toISOString(),
+        Orientacao_Sexual: document.querySelector('select[name="orientacao"]').value,
+        Possui_Deficiencia: document.querySelector('input[name="deficiencia"]').value,
+        Consumo_Tabaco: document.querySelector('input[name="ConsumoTabaco"]:checked')?.value || "false",
+        Consumo_Alcool:(document.querySelector('input[name="ConsumoAlcool"]:checked')?.value || "") + (document.querySelector('input[name="ConsumoVinho"]:checked')?.value || ""),
+        Consome_Tabaco:document.querySelector('input[name="tabaco"]').value,
+        Feridas_Boca: document.querySelector('input[name="feridas"]').value,
+        consome_alcool: document.querySelector('input[name="alcool"]').value,
+        Telefone: document.querySelector('input[name="telefone"]').value,
+        Atividade: true
+    };
+if(formData.Consumo_Alcool == ""){
+    formData.Consumo_Alcool = "false"
+}
+console.log(JSON.stringify(formData))
+    // Opções para a requisição fetch
+    let requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    };
+
+    // URL da sua API (substitua pelo endpoint correto)
+    let url = 'http://sua-api.com/endpoint';
+
+    // Envio da requisição fetch
+    fetch(url, requestOptions)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Resposta da API:', data);
+            // Aqui você pode tratar a resposta da API conforme necessário
+        })
+        .catch(error => console.error('Erro ao enviar dados:', error));
+}
+
+// Função para formatar a data de dd/mm/aaaa para ISO 8601 (aaaa-mm-ddT00:00:00Z)
+function formatarData(data) {
+    let partes = data.split('/');
+    if (partes.length === 3) {
+        return `${partes[2]}-${partes[1]}-${partes[0]}T00:00:00Z`;
+    } else {
+        return data; // Retorna como está caso não seja possível formatar
+    }
+}
+
+// Adiciona um event listener para o evento de submit do formulário
+document.querySelector('.form').addEventListener('submit', enviarDados);
