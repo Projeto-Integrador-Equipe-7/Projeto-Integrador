@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: #fffafa;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    height: 100%; 
+    position: fixed; 
+    border-color: white;
+    border-right: black;
+    border-style: solid;
+}
+
+
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 250px;
+    overflow: auto;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #041E49;
+}
+.sidebar-button{
+    display: block;
+    height: 30px;
+    width: 180px;
+    border: none;
+    text-align: left;
+    margin-left: 30px;
+    background-color: white;
+    margin-top: 10px;
+}
+.sidebar-button:hover, .logout-button:hover {
+    background-color: #f6f6f6;
+    color: #000000; 
+    border-radius: 5px;
+}
+.logout-button {
+    position: absolute;
+    bottom: 10px;
+    text-align: left;
+    margin-left: 30px;
+    border: none;
+    background: none; 
+
+    align-items: center;
+}
+
+.sidebar-button img, .logout-button img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px; 
+    position: relative;
+    top: 5px;
+}
+
+.sobrevidas-logo{
+    margin-top: calc(5vh - 10px);
+    display: block;
+    height: 20px;
+    margin-bottom: 9vh;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold
+}
+.top {
+    height: 10vh;
+    width: calc(100% - 250px); 
+    margin-left: 250px;
+    background-color: #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    
+}
+
+.left-image {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.right-image {
+    width: 40px; 
+    height: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+}
