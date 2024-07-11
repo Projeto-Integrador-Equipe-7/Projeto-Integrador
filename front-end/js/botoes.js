@@ -48,3 +48,27 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'home.html';
         });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('atualizarEndereco');
+    btn.addEventListener('click', function() {
+        localStorage.setItem('botaoClicado', 'endereco');
+        var elemento = document.getElementById('popup');
+        elemento.removeAttribute('hidden');
+        });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('atualizarEmail');
+    btn.addEventListener('click', function() {
+        localStorage.setItem('botaoClicado', 'email');
+        var elemento = document.getElementById('popup');
+        elemento.removeAttribute('hidden');
+        });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('inativar');
+    btn.addEventListener('click', function() {
+        localStorage.setItem('botaoClicado', 'inativar');
+        var elemento = document.getElementById('popup');
+        elemento.removeAttribute('hidden');
+        });
+});

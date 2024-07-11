@@ -107,3 +107,4 @@ function limparTabela() {
     // Define o conteúdo do tbody como vazio, removendo todas as linhas
     tbody.innerHTML = '';
 }
+

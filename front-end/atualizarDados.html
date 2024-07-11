@@ -12,7 +12,7 @@
 <body>
     <div class="sidebar">
         <label class="sobrevidas-logo">Sobrevidas</label>
-        <button class="sidebar-button" type="button"><img src="images/att-icon.png" alt="Ícone">Página Inicial</button>
+        <button class="sidebar-button" type="button"><img src="images/home-icon.png" alt="Ícone">Página Inicial</button>
         <button class="sidebar-button" type="button"><img src="images/addPacient-icon.png" alt="Ícone">Cadastrar
             Paciente</button>
         <button class="sidebar-button" type="button"><img src="images/pacientList-icon.png" alt="Ícone">Consultar
@@ -31,7 +31,7 @@
     <div class="content">
         <div class="attContent">
             <div class="new-div">
-                <button class="att-button" type="button" id="atualizarEndereco">  ATUALIZAR ENDEREÇO</button>
+                <button class="att-button" type="button" id="atualizarEndereco"> ATUALIZAR ENDEREÇO</button>
             </div>
             <div class="new-div">
                 <button class="att-button" type="button" id="atualizarEmail">ATUALIZAR EMAIL/TELEFONE</button>
@@ -39,8 +39,28 @@
             <div class="new-div">
                 <button class="att-button" type="button" id="inativar">INATIVAR</button>
             </div>
+            <div class="popup" id="popup" hidden>
+                <form class="attform" id="searchForm">
+                    <div class="inputs">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf-input" maxlength="14" required>
+                    </div>
+                    <button type="submit" id="attDadosBtn">buscar</button>
+                </form>
+            </div>
+            <div class="popup2">
+                <span>Nome:</span>
+                <br>
+                <span>Endereço:</span>
+                <br>
+                <span>Bairro:</span>
+
+            </div>
         </div>
     </div>
     <script src="./js/botoes.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/atualizarDados.js"></script>
 </body>
+
 </html>
