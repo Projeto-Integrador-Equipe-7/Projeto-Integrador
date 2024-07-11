@@ -42,3 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'cadastro.html';      //COLOCAR O NOME DA PÁGINA AQUI QUANDO ELA ESTIVER PRONTA
         });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var cadastroCompleto = document.getElementById('cadastroCompleto');
+    cadastroCompleto.addEventListener('click', function() {
+            window.location.href = 'home.html';
+        });
+});

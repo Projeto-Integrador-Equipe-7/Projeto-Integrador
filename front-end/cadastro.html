@@ -49,7 +49,7 @@
                         </div>
                         <div>
                             <label for="cpf">CPF</label>
-                            <input type="text" name="cpf" id="cpf-input" required >
+                            <input type="text" name="cpf" id="cpf-input" required>
 
                             <label for="nascimento">Data de nascimento</label>
                             <input type="text" id="dataForm" name="nascimento" placeholder="DD/MM/AAAA"
@@ -80,7 +80,7 @@
                             <input type="text" name="telefone" placeholder="" required>
 
                             <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
-                            <input type="text" name="deficiencia" placeholder="" required>
+                            <input type="text" name="deficiencia" placeholder="">
                         </div>
                         <div>
 
@@ -152,19 +152,25 @@
                                 </div>
                                 <div class="input-div">
                                     <p>Se faz consumo de álcool, qual é o consumo?</p>
-                                    <input type="radio" name="ConsumoAlcool" value="25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)">
+                                    <input type="radio" name="ConsumoAlcool"
+                                        value="25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)">
                                     <label for="ConsumoAlcool">25 latas de cerveja por semana ou mais (aproximadamente 3
                                         a 4 latas por dia)</label>
                                     <p></p>
-                                    <input type="radio" name="ConsumoAlcool" value="menos de 25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)">
+                                    <input type="radio" name="ConsumoAlcool"
+                                        value="menos de 25 latas de cerveja por semana ou mais (aproximadamente 3 a 4 latas por dia)">
                                     <label for="ConsumoAlcool">menos de 25 latas de cerveja por semana ou mais
                                         (aproximadamente 3 a 4 latas por dia)</label>
                                     <p></p>
-                                    <input type="radio" name="ConsumoVinho" value="6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)">
-                                    <label for="ConsumoVinho">6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <input type="radio" name="ConsumoVinho"
+                                        value="6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)">
+                                    <label for="ConsumoVinho">6 garrafas de vinho por semana ou mais (aproximadamente 1
+                                        garrafa por dia)</label>
                                     <p></p>
-                                    <input type="radio" name="ConsumoVinho" value="menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)">
-                                    <label for="ConsumoVinho">menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)</label>
+                                    <input type="radio" name="ConsumoVinho"
+                                        value="menos de 6 garrafas de vinho por semana ou mais (aproximadamente 1 garrafa por dia)">
+                                    <label for="ConsumoVinho">menos de 6 garrafas de vinho por semana ou mais
+                                        (aproximadamente 1 garrafa por dia)</label>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +179,13 @@
                 <hr style="width: 90%; margin: 2px auto;">
                 <div class="submit">
 
-<button type="submit" class="submitButton"><span>Concluir cadastro</span></button>
+                    <button type="submit" class="submitButton" onclick="openPopup()"><span>Concluir cadastro</span></button>
+                    
+                </div>
+                <div class="popup" id="popup" hidden>
+                    <img src="./images/check.png">
+                    <h2>Cadastro realizado com sucesso</h2>
+                    <button type="button" id="cadastroCompleto">Voltar para a tela inicial</button>
                 </div>
             </form>
         </div>

@@ -52,7 +52,8 @@ function formatDate(input) {
 // Função para enviar os dados para a API
 function enviarDados(event) {
     event.preventDefault();
-
+    var popup = document.getElementById("popup");
+    popup.removeAttribute("hidden");
 
     let formData = {
         Nome_Completo: document.querySelector('input[name="nome"]').value,
@@ -113,3 +114,4 @@ function formatarData(data) {
 
 // Adiciona um event listener para o evento de submit do formulário
 document.querySelector('.form').addEventListener('submit', enviarDados);
+
