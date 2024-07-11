@@ -48,29 +48,43 @@
                     <button type="submit" id="attDadosBtn">buscar</button>
                 </form>
             </div>
-            <div class="popup2" id="popupEndereco" hidden >
+            <div class="popup2" id="popupEndereco" hidden>
                 <form class="attform">
-                <h2 style="margin-top: 10px;" id="nome">Nome:</h2>
-                <div class="inputs2">
-                    <label for="endereco">Novo Endereço</label>
-                    <input type="text" name="endereco"required>
-                    <label for="bairro">Novo Bairro</label>
-                    <input type="text" name="bairro"required>
-                
-                <button type="submit" id="attDadosBtnEndereco">Atualizar</button>
+                    <h2 style="margin-top: 10px;" id="nome">Nome:</h2>
+                    <div class="inputs2">
+                        <label for="endereco">Novo Endereço</label>
+                        <input type="text" name="endereco" required>
+                        <label for="bairro">Novo Bairro</label>
+                        <input type="text" name="bairro" required>
+
+                        <button type="submit" id="attDadosBtnEndereco">Atualizar</button>
+                    </div>
+                </form>
             </div>
-            <div class="popup2" id="popupEmail" hidden >
+            <div class="popup2" id="popupEmail" hidden>
                 <form class="attform">
-                <h2 style="margin-top: 10px;" id="nome">Nome:</h2>
-                <div class="inputs2">
-                    <label for="email">Novo email</label>
-                    <input type="text" name="email"required>
-                    <label for="telefone">Novo telefone</label>
-                    <input type="text" name="telefone"required>
-                
-                <button type="submit" id="attDadosBtnTelefone">Atualizar</button>
+                    <h2 style="margin-top: 10px;" id="nome2">Nome:</h2>
+                    <div class="inputs2">
+                        <label for="email">Novo email</label>
+                        <input type="text" name="email" required>
+                        <label for="telefone">Novo telefone</label>
+                        <input type="text" name="telefone" required>
+
+                        <button type="submit" id="attDadosBtnTelefone">Atualizar</button>
+                    </div>
+                </form>
             </div>
-            </form>
+            <div class="popup2" id="popupInativar" hidden>
+                <form class="attform">
+                    <h2 style="margin-top: 10px;" id="nome3">Deseja inativar <br> Nome: ?</h2>
+                    <button type="button" class="btn" id="sim">SIM</button>
+                    <button type="button" class="btn" id="nao">NÃO</button>
+                </form>
+            </div>
+            <div class="popup3" id="popup3" hidden>
+                <img src="./images/check.png">
+                <h2>Atualização de dados realizada com sucesso</h2>
+                <button type="button" id="cadastroCompleto">Voltar para a tela inicial</button>
             </div>
         </div>
     </div>

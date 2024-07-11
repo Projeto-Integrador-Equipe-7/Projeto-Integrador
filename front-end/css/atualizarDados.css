@@ -66,7 +66,7 @@
 .popup button{
     width: 50%;
     padding: 10px 0;
-    background: #1ECA7C;
+    background: #041E49;
     color: #fff;
     border: 0;
     outline: none;
@@ -129,6 +129,7 @@ text-align: center;
     
 
 }
+
 .popup2 button{
     width: 400px;
     padding: 10px 0;
@@ -149,4 +150,38 @@ text-align: center;
 .inputs2{
     width: 100%;
     height: 100%;
+}
+.btn{
+    width: 200px !important;
+    margin-top: 80px;
+}
+.popup3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background: white;
+    transform: translate(-30%, -50%);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    height: 300px;
+}
+
+.popup3 img{
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+.popup3 button{
+    width: 50%;
+    padding: 10px 0;
+    background: #041E49;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
