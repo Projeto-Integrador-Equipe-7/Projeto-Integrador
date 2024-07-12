@@ -1,6 +1,6 @@
-Pitch de apresentação do projeto:
+### Pitch de apresentação do projeto:
 
-Video de apresentação da prova de conceito e da implementação com o banco de dados:
+### Video de apresentação da prova de conceito e da implementação com o banco de dados:
 
 # Configurações e implementação do software:
 Dependências necessárias: 
@@ -42,8 +42,8 @@ Dependências necessárias:
         Atividade BOOLEAN
     );
 
-- Execução do back-end:
-  - Navegue até a pasta back-end no repositório pelo terminal
-  - Utilize go get ./... para baixar todos os pacotes externos necessários para a execução do código
-  - Executa a API com go run main.go
-  - Acesse o frontend pelo localhost8000
+## Execução do back-end:
+ ### - Navegue até a pasta back-end no repositório pelo terminal
+ ### - Utilize go get ./... para baixar todos os pacotes externos necessários para a execução do código
+ ### - Executa a API com go run main.go
+ ### - Acesse o frontend pelo localhost8000
