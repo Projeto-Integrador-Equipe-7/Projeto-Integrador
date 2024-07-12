@@ -72,3 +72,26 @@ document.addEventListener('DOMContentLoaded', function() {
         elemento.removeAttribute('hidden');
         });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = [
+        { id: 'home-btn', href: 'home.html' },
+        { id: 'cadastro-btn', href: 'cadastro.html' },
+        { id: 'consulta-btn', href: 'consultarPaciente.html' },
+        { id: 'att-btn', href: 'atualizarDados.html' },
+        { id: 'logout', href: 'index.html' },
+        { id: 'notification-icon', href: 'notificacoes.html' }
+    ];
+
+    buttons.forEach(function(button) {
+        var btnElement = document.getElementById(button.id);
+        if (btnElement) {
+            console.log('Adicionando listener para:', button.id);
+            btnElement.addEventListener('click', function() {
+                console.log('Clicou em:', button.id);
+                window.location.href = button.href;
+            });
+        } else {
+            console.log('Elemento não encontrado:', button.id);
+        }
+    });
+});
