@@ -13,8 +13,8 @@ Etapas necessárias para execução do banco de dados:
   - Criação do banco de dados:   **CREATE DATABASE api_projeto_integrador;**
   - Entrar no banco de dados como super usuário **psql -h localhost -p 5432 -U postgres -d api_projeto_integrador**
 - Criação do usuário:
-  -Criação do usuário: **CREATE USER user_api WITH PASSWORD '1234';**
-  -Atribuição de permissões para o usuário: **GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE clientes TO user_api;**
+  - Criação do usuário: **CREATE USER user_api WITH PASSWORD '1234';**
+  - Atribuição de permissões para o usuário: **GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE clientes TO user_api;**
 - Criação da tabela (dentro do terminal do banco de dados)
 
     CREATE TABLE Paciente (
