@@ -1,7 +1,8 @@
 Pitch de apresentação do projeto:
+
 Video de apresentação da prova de conceito e da implementação com o banco de dados:
 
-Configurações e implementação do software:
+#Configurações e implementação do software:
 Dependências necessárias: 
 - go version go1.22.2
 - psql (15.7)
