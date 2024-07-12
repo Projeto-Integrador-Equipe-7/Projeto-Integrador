@@ -2,21 +2,21 @@ Pitch de apresentação do projeto:
 
 Video de apresentação da prova de conceito e da implementação com o banco de dados:
 
-#Configurações e implementação do software:
+# Configurações e implementação do software:
 Dependências necessárias: 
 - go version go1.22.2
 - psql (15.7)
 - Arquivos presentes nesse repositório
 
-Etapas necessárias para execução do banco de dados:
-- Criação do banco de dados:
+## Etapas necessárias para execução do banco de dados:
+### - Criação do banco de dados:
   - Entrar no terminal do postgres: **psql -U postgres**
   - Criação do banco de dados:   **CREATE DATABASE api_projeto_integrador;**
   - Entrar no banco de dados como super usuário **psql -h localhost -p 5432 -U postgres -d api_projeto_integrador**
-- Criação do usuário:
+### - Criação do usuário:
   - Criação do usuário: **CREATE USER user_api WITH PASSWORD '1234';**
   - Atribuição de permissões para o usuário: **GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE clientes TO user_api;**
-- Criação da tabela (dentro do terminal do banco de dados)
+### - Criação da tabela (dentro do terminal do banco de dados)
 
     CREATE TABLE Paciente (
         Id SERIAL PRIMARY KEY,
