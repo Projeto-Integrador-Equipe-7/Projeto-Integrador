@@ -43,7 +43,7 @@ Dependências necessárias:
     );
 
 ## Execução do back-end:
- ### - Navegue até a pasta back-end no repositório pelo terminal
- ### - Utilize go get ./... para baixar todos os pacotes externos necessários para a execução do código
- ### - Executa a API com go run main.go
- ### - Acesse o frontend pelo localhost8000
+ - Navegue até a pasta back-end no repositório pelo terminal
+ - Utilize go get ./... para baixar todos os pacotes externos necessários para a execução do código
+ - Executa a API com go run main.go
+ - Acesse o frontend pelo localhost8000
