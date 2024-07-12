@@ -71,7 +71,8 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
 document.addEventListener('DOMContentLoaded', function() {
     var sim = document.getElementById('sim');
     sim.addEventListener('click', function() {
-            atividade = false
+        localStorage.setItem('atividade', 'false');
+
             atualizarDado()
             var elemento = document.getElementById('popup3');
             elemento.removeAttribute('hidden');
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var nao = document.getElementById('nao');
     nao.addEventListener('click', function() {
-            localStorage.setItem('atividade', 'false');
+            
             var elemento2 = document.getElementById('popupInativar');
             elemento2.setAttribute('hidden', true);
         });
@@ -107,15 +108,46 @@ function atualizarDado() {
         body: JSON.stringify(formData)
     };
     console.log(JSON.stringify(formData))
-    let url = 'http://localhost:9000/{id}';
+    let url = `http://localhost:9000/${localStorage.getItem('id')}`;
 
-    /*fetch(url, requestOptions)
+    fetch(url, requestOptions)
         .then(response => response.json())
         .then(data => {
             console.log('Resposta da API:', data);
 
         })
-        .catch(error => console.error('Erro ao enviar dados:', error));*/
+        .catch(error => console.error('Erro ao enviar dados:', error));
 }
+
+document.getElementById('form2').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var email = document.querySelector('input[name="email"]').value;
+    var telefone = document.querySelector('input[name="telefone"]').value;
+
+    localStorage.setItem('email', email);
+    localStorage.setItem('telefone', telefone);
+
+    atualizarDado()
+    var elemento = document.getElementById('popupEmail');
+            elemento.setAttribute('hidden', true);
+            var elemento2 = document.getElementById('popup3');
+            elemento2.removeAttribute('hidden');
+
+});
+document.getElementById('form1').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var endereco = document.querySelector('input[name="endereco"]').value;
+    var bairro = document.querySelector('input[name="bairro"]').value;
+
+    localStorage.setItem('endereco', endereco);
+    localStorage.setItem('bairro', bairro);
+    atualizarDado()
+    var elemento = document.getElementById('popupEndereco');
+    elemento.setAttribute('hidden', true);
+    var elemento2 = document.getElementById('popup3');
+    elemento2.removeAttribute('hidden');
+});
 
 
