@@ -10,14 +10,14 @@ Dependências necessárias:
 
 ## Etapas necessárias para execução do banco de dados:
 ### - Criação do banco de dados:
-  - Entrar no terminal do postgres: **psql -U postgres**
-  - Criação do banco de dados:   **CREATE DATABASE api_projeto_integrador;**
-  - Entrar no banco de dados como super usuário **psql -h localhost -p 5432 -U postgres -d api_projeto_integrador**
+  - Entrar no terminal do postgres: `psql -U postgres`
+  - Criação do banco de dados:   `CREATE DATABASE api_projeto_integrador;`
+  - Entrar no banco de dados como super usuário `psql -h localhost -p 5432 -U postgres -d api_projeto_integrador`
 ### - Criação do usuário:
-  - Criação do usuário: **CREATE USER user_api WITH PASSWORD '1234';**
-  - Atribuição de permissões para o usuário: **GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE clientes TO user_api;**
+  - Criação do usuário: `CREATE USER user_api WITH PASSWORD '1234';`
+  - Atribuição de permissões para o usuário: `GRANT INSERT, SELECT, UPDATE, DELETE ON TABLE clientes TO user_api;`
 ### - Criação da tabela (dentro do terminal do banco de dados)
-
+```
     CREATE TABLE Paciente (
         Id SERIAL PRIMARY KEY,
         NomeCompleto VARCHAR(255), 
@@ -41,9 +41,9 @@ Dependências necessárias:
         Telefone VARCHAR(20), 
         Atividade BOOLEAN
     );
-
+```
 ## Execução do back-end:
  - Navegue até a pasta back-end no repositório pelo terminal
- - Utilize go get ./... para baixar todos os pacotes externos necessários para a execução do código
- - Executa a API com go run main.go
+ - Utilize `go get ./...` para baixar todos os pacotes externos necessários para a execução do código
+ - Executa a API com `go run main.go`
  - Acesse o frontend pelo localhost8000
