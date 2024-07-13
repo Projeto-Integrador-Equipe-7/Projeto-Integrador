@@ -47,3 +47,11 @@ Dependências necessárias:
  - Utilize `go get ./...` para baixar todos os pacotes externos necessários para a execução do código
  - Executa a API com `go run main.go`
  - Acesse o frontend pelo localhost8000
+
+## Funcionalidades principais:
+1.Sistema de fácil acesso e navegabilidade;
+2.Cadastro detalhado de pacientes que se encaixam nos fatores de risco;
+3.Filtragem de dados dos pacientes para uma rápida busca entre os cadastrados;
+4.Possibilidade de edição de dados e inativação de pacientes;
+5.Mapa interativo.
+
