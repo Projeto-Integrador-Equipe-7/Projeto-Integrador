@@ -1,0 +1,25 @@
+.mapa{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.mapa iframe{
+
+    left:257px;
+
+    top:5px;
+
+    height:587px;
+
+    width:1108px;
+
+    position:absolute;
+
+}
