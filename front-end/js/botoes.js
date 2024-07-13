@@ -79,7 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'consulta-btn', href: 'consultarPaciente.html' },
         { id: 'att-btn', href: 'atualizarDados.html' },
         { id: 'logout', href: 'index.html' },
-        { id: 'notification-icon', href: 'notificacoes.html' }
+        { id: 'notification-icon', href: 'notificacoes.html' },
+        { id: 'history-button', href: 'mapa.html'},
+        { id: 'mapa-btn', href: 'mapa.html'}
     ];
 
     buttons.forEach(function(button) {
