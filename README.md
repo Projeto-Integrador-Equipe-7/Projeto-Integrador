@@ -50,8 +50,12 @@ Dependências necessárias:
 
 ## Funcionalidades principais:
 1.Sistema de fácil acesso e navegabilidade;
+
 2.Cadastro detalhado de pacientes que se encaixam nos fatores de risco;
+
 3.Filtragem de dados dos pacientes para uma rápida busca entre os cadastrados;
+
 4.Possibilidade de edição de dados e inativação de pacientes;
+
 5.Mapa interativo.
 
