@@ -48,7 +48,7 @@ Dependências necessárias:
  - Executa a API com `go run main.go`
  - Acesse o frontend pelo localhost8000
 
-## Funcionalidades principais:
+## 🖌️Funcionalidades principais:
 1.Sistema de fácil acesso e navegabilidade;
 
 2.Cadastro detalhado de pacientes que se encaixam nos fatores de risco;
