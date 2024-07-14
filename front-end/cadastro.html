@@ -52,60 +52,66 @@
                             <input type="text" id="dataForm" name="nascimento" placeholder="DD/MM/AAAA"
                                 oninput="formatDate(this)" required>
 
-                            <label for="sexo">Sexo</label>
-                            <select name="sexo" required>
-                                <option value="" disabled selected hidden></option>
-                                <option value="opcao1">Opção 1</option>
-                                <option value="opcao2">Opção 2</option>
-                                <option value="opcao3">Opção 3</option>
-                            </select>
-                        </div>
-
-                    </div>
-                </div>
-                <hr style="width: 90%; margin: 2px auto;">
-                <div class="form-02">
-                    <div class="input_container">
-                        <div class="input-01">
-                            <label for="nomeMae">Nome da mãe</label>
-                            <input type="text" name="nomeMae" placeholder="" required>
-
-                            <label for="email">Email</label>
-                            <input type="text" name="email" placeholder="" required>
-
-                            <label for="telefone">Telefone</label>
-                            <input type="text" name="telefone" placeholder="" required>
-
-                            <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
-                            <input type="text" name="deficiencia" placeholder="">
-                        </div>
-                        <div>
-
-
-                            <label for="microarea">Microárea</label>
-                            <select name="microarea" required>
-                                <option value="" disabled selected hidden></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-
-                            <label for="genero">Identidade de gênero</label>
-                            <select name="genero" required>
-                                <option value="" disabled selected hidden></option>
-                                <option value="opcao1">Opção 1</option>
-                                <option value="opcao2">Opção 2</option>
-                                <option value="opcao3">Opção 3</option>
-                            </select>
-
-                            <label for="orientacao">Orientação Sexual</label>
-                            <select name="orientacao" required>
-                                <option value="" disabled selected hidden></option>
-                                <option value="opcao1">Opção 1</option>
-                                <option value="opcao2">Opção 2</option>
-                                <option value="opcao3">Opção 3</option>
-                            </select>
-                        </div>
+                                <label for="sexo">Sexo</label>
+                                <select name="sexo" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="nao_binario">Não-binário</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                                </div>
+                                
+                                </div>
+                                </div>
+                                <hr style="width: 90%; margin: 2px auto;">
+                                <div class="form-02">
+                                    <div class="input_container">
+                                        <div class="input-01">
+                                            <label for="nomeMae">Nome da mãe</label>
+                                            <input type="text" name="nomeMae" placeholder="" required>
+                                
+                                            <label for="email">Email</label>
+                                            <input type="text" name="email" placeholder="" required>
+                                
+                                            <label for="telefone">Telefone</label>
+                                            <input type="text" name="telefone" placeholder="" maxlength="11" required>
+                                
+                                            <label for="deficiencia">Possui deficiencia? se sim, qual?</label>
+                                            <input type="text" name="deficiencia" placeholder="">
+                                        </div>
+                                        <div>
+                                
+                                            <label for="microarea">Microárea</label>
+                                            <select name="microarea" required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                
+                                            <label for="genero">Identidade de gênero</label>
+                                            <select name="genero" required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="cis_masculino">Cisgênero Masculino</option>
+                                                <option value="cis_feminino">Cisgênero Feminino</option>
+                                                <option value="trans_masculino">Transgênero Masculino</option>
+                                                <option value="trans_feminino">Transgênero Feminino</option>
+                                                <option value="nao_binario">Não-binário</option>
+                                                <option value="outro">Outro</option>
+                                            </select>
+                                
+                                            <label for="orientacao">Orientação Sexual</label>
+                                            <select name="orientacao" required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="heterossexual">Heterossexual</option>
+                                                <option value="homossexual">Homossexual</option>
+                                                <option value="bissexual">Bissexual</option>
+                                                <option value="assexual">Assexual</option>
+                                                <option value="pansexual">Pansexual</option>
+                                                <option value="outro">Outro</option>
+                                            </select>
+                                        </div>
                     </div>
                 </div>
                 <hr style="width: 90%; margin: 2px auto;">
