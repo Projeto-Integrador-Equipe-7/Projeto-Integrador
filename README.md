@@ -1,4 +1,4 @@
-### Pitch de apresentação do projeto:
+### Pitch de apresentação do projeto: https://youtu.be/f7kMKpcDsA4?si=-U3hMHPlY1Y-qhwZ
 
 ### Video de apresentação da prova de conceito e da implementação com o banco de dados:
 
